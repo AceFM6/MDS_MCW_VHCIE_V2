@@ -1,0 +1,791 @@
+
+/*----------------------------------------------------
+                        FONT
+----------------------------------------------------*/ 
+
+@font-face { 	font-family: "Avenir"; 	src: url('../Font/AvenirLTStd-Book.otf'); }
+
+
+/*----------------------------------------------------
+                        BASE
+----------------------------------------------------*/ 
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Avenir";
+}
+
+p{
+    line-height: 32px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.sub_title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h1{
+    padding-top: 80px;
+    font-size: 68px;
+    text-transform: uppercase;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    padding-right: 20px;
+    color: rgb(0,50,80);
+}
+
+h3{
+    text-transform: uppercase;
+    font-size: 22px;
+    color: rgb(0,50,80);
+}
+
+.bar_title{
+    background-color: rgb(0,50,80);
+    height: 2px;
+    width: 70%;
+}
+
+.h2_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.active{
+    color: rgb(0,50,80);
+}
+
+/*----------------------------------------------------
+                    Canvas particule
+----------------------------------------------------*/ 
+
+#particle-canvas {
+    width: 100%;
+    height: 100vh;
+    background: rgb(0,50,80);
+    background: linear-gradient(90deg, rgba(0,50,80,1) 0%,
+     rgba(49,120,129,1) 45%, rgba(76,158,156,1) 83%, rgba(96,185,176,1) 97%);
+    z-index: 1;
+    float: left;
+    min-width: 1144px;
+    min-height: 800px;
+}
+
+/*----------------------------------------------------
+                        header
+----------------------------------------------------*/ 
+
+header{
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    width: 90%;
+    padding: 20px 5%;
+}
+
+header ul{
+    margin: 0;
+    display: flex;
+}
+
+header ul li a{
+    color: white;
+    padding: 10px 30px;
+    margin: 10px;
+    border-bottom: 1px solid transparent;
+}
+
+header ul li:last-child a{
+    margin-right: 0;
+    background-color: rgb(0,50,80);
+}
+
+header img{
+    height: 50px;
+}
+
+header ul li a:hover{
+    border-bottom: 1px solid white;
+}
+
+header ul li:last-child a:hover{
+    background-color: rgba(0, 50, 80, 0.8);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 50, 80, 0.8);
+}
+
+/*----------------------------------------------------
+                        footer
+----------------------------------------------------*/ 
+
+footer{
+    background: rgb(0,50,80);
+    background: linear-gradient(90deg, rgba(0,50,80,1) 0%,
+     rgba(49,120,129,1) 45%, rgba(76,158,156,1) 83%, rgba(96,185,176,1) 97%);
+    
+}
+
+#footer_container{
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 50px 0;
+}
+
+#footer_container ul{
+    list-style-type: disc;
+}
+
+footer #footer_sn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer #footer_sn img{
+    height: 30px;
+}
+
+footer span{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a{
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover{
+    color: rgb(96,185,176);
+}
+
+/*----------------------------------------------------
+                        container
+----------------------------------------------------*/ 
+
+#container{
+    width: 100%;
+    z-index: 50;
+    position: absolute;
+}
+
+#container{
+    background-image: url('https://image.noelshack.com/fichiers/2020/23/4/1591270542-61769.png');
+    background-repeat: no-repeat;
+    background-position: right 0px bottom 280px;
+}
+
+/*----------------------------------------------------
+                        index
+----------------------------------------------------*/
+
+/* top */
+
+#index_top{
+    height: 100vh;
+    color: white;
+    width: 90%;
+    margin: 0 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 1040px;
+    min-height: 800px;
+}
+
+#index_top_container p{
+    font-size: 20px;
+    line-height: 38px;
+    width: 80%;
+    margin: 0 10% 40px 10%;
+}
+
+#index_top_dateplace img{
+    width: 50px;
+    margin-right: 20px;
+}
+
+#index_top_dateplace{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 26px;
+}
+
+#index_top_dateplace span{
+    display: flex;
+    align-items: center;
+}
+
+#index_top_container #index_top_btn_sub{
+    background-color: rgb(0,50,80);
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 18px 50px;
+    text-decoration: none;
+}
+
+#index_top_container #index_top_btn_sub:hover{
+    background-color:rgb(0,50,80,0.8);
+}
+
+#index_top_container a{
+    
+    color: rgb(0,50,80);
+}
+
+#index_top_container #register_ieee{
+    font-size: 20px;
+}
+
+#index_top_container a:hover{
+    text-decoration: underline;
+}
+
+#index_top_date{
+    display: flex;
+    justify-content: space-around;
+}
+
+#index_top_date span{
+    padding: 0 60px;
+}
+
+#index_top_date_act{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* keynote */
+#index_keynote{
+    width: 90%;
+    margin: 0 5%;
+    padding-bottom: 50px;
+}
+
+#index_keynote_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#index_keynote_container div{
+    width: 26%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#index_keynote_container a{
+    background-color: rgb(0,50,80);
+    color: white;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+#index_keynote_container a:hover{
+    background-color: rgba(0, 50, 80, 0.8);
+}
+
+#index_keynote_container p{
+    line-height: 32px;
+}
+
+/* whattoexpect */
+
+#index_whattoexpect{
+    width: 90%;
+    margin: 0 5%;
+    padding-bottom: 50px;
+}
+
+#index_whattoexpect_container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#index_whattoexpect_container_left, 
+#index_whattoexpect_container_right{
+    width: 40%;
+    min-width: 400px;
+}
+
+#index_whattoexpect_container_left div, 
+#index_whattoexpect_container_right div{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#index_whattoexpect_container p{
+    line-height: 32px;
+}
+
+#index_whattoexpect_container_left div p:first-child, 
+#index_whattoexpect_container_right div p:first-child{
+    color: rgb(96,185,176);
+    font-size: 50px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+/*----------------------------------------------------
+                        Committee
+----------------------------------------------------*/
+
+/* committee */
+
+#committee{
+    width: 90%;
+    margin: 0 5%;
+    color: white;
+    text-align: center;
+}
+
+#committee p{
+    font-size: 20px;
+    line-height: 38px;
+    width: 80%;
+    margin: 0 10% 40px 10%;
+}
+
+/* worshop chair */
+
+#workshop_chair{
+    width: 90%;
+    margin: 140px 5% 0 5%;
+}
+
+#workshop_chair h2{
+    color: white;
+    text-align: center;
+}
+
+#workshop_chair_container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    flex-wrap: wrap;
+}
+
+.workshop_chair_card{
+    width: 20%;
+    text-align: center;
+    background-color: white;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+    align-items: center;
+    box-shadow: 1px 1px 4px rgba(0, 49, 80, 0.2);
+    min-width: 300px;
+}
+
+.workshop_chair_card img{
+    width: 80px;
+    height: 80px;
+}
+
+.workshop_chair_card a{
+    background-color: rgb(0,50,80);
+    color: white;
+    padding: 20px 40px;
+}
+
+/* committee members */
+
+#committee_members{
+    width: 90%;
+    margin: 0 5%;
+    padding-bottom: 100px;
+}
+
+#committee_members_container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.committee_members_card{
+    width: 220px;
+    padding: 40px 40px;
+    text-align: center;
+}
+
+.committee_members_card img{
+    width: 80px;
+    height: 80px;
+}
+
+.committee_members_card h3{
+    font-size: 20px;
+}
+
+/*----------------------------------------------------
+                        Schedule
+----------------------------------------------------*/
+
+/* Schedule */
+
+#schedule{
+    width: 90%;
+    margin: 0 5%;
+    color: white;
+    text-align: center;
+}
+
+#schedule p{
+    font-size: 20px;
+    line-height: 38px;
+    width: 80%;
+    margin: 0 10% 40px 10%;
+}
+
+/* first session */
+
+#first_session{
+    width: 90%;
+    margin: 0 5%;
+    padding-top: 80px;
+}
+
+#first_session .bar_title{
+    background-color: white;
+}
+
+#first_session h2{
+    color: white;
+}
+
+#first_session_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.schedule_date_card{
+    background-color: white;
+    text-align: center;
+    box-shadow: 1px 1px 4px rgba(0, 49, 80, 0.2);
+    width: 20%;
+    min-width: 340px;
+    margin-bottom: 40px;
+}
+
+.schedule_date_card  .schedule_date_card_date{
+    background-color: rgb(0,50,80);
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.schedule_date_card div{
+    padding: 20px;
+}
+
+.color_b{
+    color: rgb(0,50,80);
+}
+
+.schedule_date_card div span{
+    padding-bottom: 20px;
+}
+
+/* second session*/
+
+#second_session{
+    width: 90%;
+    margin: 0 5%;
+    padding-top: 60px;
+}
+
+#second_session_container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+/* concluding remark */
+
+#concluding_remarks{
+    width: 90%;
+    margin: 0 5%;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+/*----------------------------------------------------
+                    submission
+----------------------------------------------------*/
+
+/* submission */
+
+#submission{
+    width: 90%;
+    margin: 0 5%;
+    color: white;
+    text-align: center;
+}
+
+#submission p{
+    font-size: 20px;
+    line-height: 38px;
+    width: 80%;
+    margin: 0 10% 40px 10%;
+}
+
+/* Instructions */
+
+#instruction{
+    width: 90%;
+    margin: 0 5%;
+    padding-top: 80px;
+}
+
+#instruction .bar_title{
+    background-color: white;
+    width: 60%;
+}
+
+#instruction h2{
+    color: white;
+}
+
+#instruction_container{
+    background-color: white;
+    padding: 40px;
+}
+
+#instruction_container div{
+    display: flex;
+    width: 80%;
+    margin: 0 10%;
+    align-items: flex-start;
+}
+
+#instruction_container div .instruction_numb{
+    color: rgba(96,185,176,1);
+    font-size: 50px;
+    margin-right: 50px;
+}
+
+#instruction_container div span{
+    margin-top: 30px;
+}
+
+#instruction_container div span ul{
+    list-style-type: disc;
+}
+
+#instruction_container p{
+    font-size: 20px;
+}
+
+#instruction_container ul li {
+    padding: 10px 0;
+}
+
+/* instructions submission*/
+
+#instruction_submit{
+    width: 100%;
+    background: rgb(0,50,80);
+    background: linear-gradient(90deg, rgba(0,50,80,1) 0%,
+     rgba(49,120,129,1) 45%, rgba(76,158,156,1) 83%, rgba(96,185,176,1) 97%);
+    /*background: url('https://image.noelshack.com/fichiers/2020/23/4/1591271161-work-workmode-apple.jpg') no-repeat center;*/
+    display: flex;
+    align-items: center;
+    height: 300px;
+    justify-content: space-evenly;
+}
+
+#instruction_submit img{
+    height: 100px;
+}
+
+#instruction_submit div{
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+}
+
+#instruction_submit div p:first-child{
+    color: rgb(0,50,80);
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+
+#instruction_submit div a{
+    background-color: rgb(0,50,80);
+    color: white;
+    display: inline-block;
+    padding: 20px 40px;
+}
+
+/* topics */
+
+#topics{
+    width: 90%;
+    margin: 0 5%;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+#topics_list{
+    display: flex;
+}
+
+#topics_list ul{
+    list-style-type: disc;
+    padding: 0 80px;
+}
+
+#topics_list ul li{
+    padding: 10px 0;
+}
+
+
+.slider {
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+.slide_viewer {
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide_group {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.slide {
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.slide:first-child {
+    display: block;
+}
+
+.slide_buttons {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+a.slide_btn {
+    color: rgb(96,185,176);
+    font-size: 42px;
+    margin: 0 0.175em;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+    color: rgb(0,50,80);
+    cursor: pointer;
+}
+
+.directional_nav {
+    height: 340px;
+    margin: 0 auto;
+    max-width: 940px;
+    position: relative;
+    top: -340px;
+}
+
+.previous_btn {
+    bottom: 0;
+    left: 0px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    padding: 10px 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.next_btn {
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    padding: 10px 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.previous_btn, .next_btn {
+    cursor: pointer;
+    height: 65px;
+    opacity: 0.7;
+    color: rgb(0,50,80);
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    width: 65px;
+}
+
+.previous_btn:hover, .next_btn:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+    .previous_btn {
+        left: 50px;
+    }
+    .next_btn {
+        right: 50px;
+    }
+}
+
+#slider{
+    height: 500px;
+}
+
+.slide img{
+    width: 100%;
+}
